@@ -1,6 +1,6 @@
 <p align="center">
 
-  <h2 align="center">NAACCR XML Parser</h3>
+  <h2 align="center">PCORNET_CDM_TUMOR_Load</h3>
 
   <p align="center">
 
@@ -14,7 +14,7 @@
 
 The PCORNET_CDM_TUMOR_Load will parse NAACCR data files in XML data format (any XML version).  The parsed data is stored a SQL Server table.  Valueset compliance is also checked.
 
-Note that this project is written specifically to comply with the specification provided in [tumor table.version1.2.xlsx](https://sqlitebrowser.org/)
+Note that this project is written specifically to comply with the specification provided in [tumor table.version1.2.xlsx](https://github.com/jimsvobodaunmc/PCORNET_CDM_TUMOR_Load/tree/main/docs)
 
 
 
@@ -37,31 +37,28 @@ If not done already, download and install the current version of Python from [py
 
 ### Installation
 
-1. Clone the repo
+1. Clone the GitHub respository
    ```
-   git clone https://github.com/jimsvobodacode/NAACCR_XML_Parse.git
+   git clone https://github.com/jimsvobodaunmc/PCORNET_CDM_TUMOR_Load.git
    ```
-2. Manually create SQL Server tables
-   ```
-   [python.org](https://www.python.org/).
-   ```
-
+2. Manually create SQL Server tables using the scripts in the [TSQL folder](https://github.com/jimsvobodaunmc/PCORNET_CDM_TUMOR_Load/tree/main/TSQL)
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-1. Copy your NAACCR files to the "data" subdirectory
-2. Open Powershell in Windows 10
-3. Navigate to your project directory
-4. Run ```python app.py```
-
+1. Update the connection string in app.py to point to your SQL Server database
+2. Copy your NAACCR files to the "data" subdirectory.  Files will be processed in chronological order.
+3. Open Powershell or Terminal in Windows 10 or 11
+4. Navigate to your project directory
+5. Run ```python app.py```
+6. Inspect output or log file for run results.  Valueset discrepancies will be written to valueset_invalid.txt file.
+7. When complete data will be fully parsed into TUMOR_PRIVATE table
+8. Non-private fields will be copied to TUMOR table.  This is the table to add to your CDM.
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-I'm only accepting bug fixes at this time.
-
-
+You are welcome to send me any feedback or bug fixes.
 
 
 <!-- CONTACT -->
