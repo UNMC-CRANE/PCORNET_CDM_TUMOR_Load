@@ -39,11 +39,11 @@ If not done already, download and install the current version of Python from [py
 
 1. Clone the GitHub respository
    ```
-   git clone [https://github.com/jimsvobodacode/NAACCR_XML_Parse.git](https://github.com/jimsvobodaunmc/PCORNET_CDM_TUMOR_Load.git)
+   git clone https://github.com/jimsvobodaunmc/PCORNET_CDM_TUMOR_Load.git
    ```
 2. Manually create SQL Server tables using the scripts in the TSQL folder
    ```
-   (https://github.com/jimsvobodaunmc/PCORNET_CDM_TUMOR_Load/tree/main/TSQL)
+   [TSQL folder](https://github.com/jimsvobodaunmc/PCORNET_CDM_TUMOR_Load/tree/main/TSQL)
    ```
 
 <!-- USAGE EXAMPLES -->
