@@ -60,6 +60,13 @@ If not done already, download and install the current version of Python from [py
 
 You are welcome to send me any feedback or bug fixes.
 
+## Common Exceptions
+
+1. ModuleNotFoundError: No module named 'pyodbc'
+- fix with:  pip install pyodbc
+2. [DBNETLIB]SQL Server does not exist or access denied. 
+- make sure your connection string information is correct
+
 
 <!-- CONTACT -->
 ## Contact
