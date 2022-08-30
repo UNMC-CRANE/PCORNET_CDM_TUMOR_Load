@@ -9,7 +9,7 @@ class App:
     def __init__(self):  
         self._util = Utility()
         self._util.ConfigureLogging()
-        self._constr = "DRIVER={SQL Server};SERVER=GPRITSQL11;DATABASE=TUMOR_TEST;PORT=1433;Trusted_Connection=yes;"
+        self._constr = "DRIVER={SQL Server};SERVER=YOURSERVER;DATABASE=YOURDATABASE;PORT=1433;Trusted_Connection=yes;"
 
     def Process(self):
         try:
